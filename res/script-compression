@@ -1,0 +1,9 @@
+load res/train.jpg trainImage
+compress 80 trainImage trainCompressed80
+histogram trainCompressed80 trainCompressed80-histogram
+compress 99 trainImage trainCompressed99
+histogram trainCompressed99 trainCompressed99-histogram
+save res/trainCompressed80-histogram.png trainCompressed80-histogram
+save res/trainCompressed99-histogram.png trainCompressed99-histogram
+save res/trainCompressed80.png trainCompressed80
+save res/trainCompressed99.png trainCompressed99

@@ -1,0 +1,10 @@
+load res/train.jpg trainImage
+levels-adjust 120 200 214 trainImage levelAdjusted1
+levels-adjust 30 127 193 trainImage levelAdjusted2
+histogram levelAdjusted1 levelAdjusted1-histogram
+histogram levelAdjusted2 levelAdjusted2-histogram
+save res/levelAdjusted1-histogram.jpg levelAdjusted1-histogram
+save res/levelAdjusted2-histogram.jpg levelAdjusted2-histogram
+save res/levelAdjusted1.jpg levelAdjusted1
+save res/levelAdjusted2.jpg levelAdjusted2
+

@@ -1,0 +1,8 @@
+load res/train.jpg trainImage
+sepia trainImage trainSepia split 50
+sharpen trainImage trainSharpen split 25
+save res/preview-sharpened.jpg trainSharpen
+save res/preview-sepia.jpg trainSepia
+color-correct trainImage colorCorrectedTrain
+save res/colorCorrectedTrain.jpg colorCorrectedTrain
+save res/Histogram-colorCorrectedTrain.jpg Histogram-colorCorrectedTrain
